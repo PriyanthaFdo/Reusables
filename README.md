@@ -24,3 +24,17 @@ Some reusable modules created by me for various Quality of life and to ease my w
     <td>Creates a logE and writes to file with a preceding 'ERROR' tag</td>
   </tr>
 </table>
+
+
+## Node
+#### logger.js
+<p>This file provides 2 methods that can be imported and used in other js files. These methods will create console logs with calling filename and line. Provides ability to write log into a txt file</P>
+<table>
+  <tr>
+    <td>logD(message, logToFile)</td>
+    <td>Normal 'console.log()' with calling location. logToFile is optional. </td>
+  </tr>
+  <tr>
+    <td>logE(message, logToFile)</td>
+    <td>Normal 'console.error()' with calling location. logToFile is optional. </td>
+  </tr>
