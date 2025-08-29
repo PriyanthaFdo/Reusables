@@ -38,3 +38,15 @@ Some reusable modules created by me for various Quality of life and to ease my w
     <td>logE(message, logToFile)</td>
     <td>Normal 'console.error()' with calling location. logToFile is optional. </td>
   </tr>
+</table>
+
+
+## Python
+#### extract_stops.py
+<p>This script processes raw GPS data from a CSV file to detect vehicle stops, 
+merge nearby consecutive stops, classify movement states, and enrich stops with 
+human-readable location names using reverse geocoding.</p>
+
+It is designed for analyzing GPS tracking datasets where:
+- Each row contains a timestamp, latitude, and longitude.
+- Gaps between points may indicate stops or GPS errors.

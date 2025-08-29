@@ -12,13 +12,13 @@
 /// print(item.isSelected); // Outputs: true
 /// ```
 class SelectableItem<T> {
-  /// Item of type [T] held by [SelectableItem] object
-  T item;
-
   /// Indicates current selection state.
   ///
   /// Defaults to `false`.
-  bool? isSelected;
+  late bool isSelected;
+
+  /// Item of type [T] held by [SelectableItem] object
+  T item;
 
   /// Constructs a [SelectableItem] object that encapsulates an item of type [T] and manages its selection state.
   ///
@@ -42,6 +42,6 @@ class SelectableItem<T> {
   /// Throws an [ArgumentError] if [item] is not provided.
   SelectableItem({
     required this.item,
-    bool? isSelected = false,
+    bool isSelected = false,
   });
 }
